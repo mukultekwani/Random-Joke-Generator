@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes for Everyone</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Random Joke Generator</h1>
+        <p class="subtitle">Need a laugh? Get a random joke!</p>
+
+        <section class="joke-card">
+        <% if (joke) { %>
+            <p class="joke"><%= joke %></p>
+        <% } else if (setup && delivery) { %>
+            <p class="setup"><%= setup %></p>
+            <p class="delivery"><%= delivery %></p>
+        <% } else { %>
+            <p class="joke">No joke available. Try again!</p>
+        <% } %>            
+        </section>
+
+        <form action="/" method="GET">
+            <button type="submit">Tell me Another Joke!</button>
+        </form>
+
+        <footer>
+            Made for a little daily laughter
+        </footer>
+    </main>
+    
+</body>
+</html>

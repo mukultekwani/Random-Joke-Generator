@@ -1,0 +1,93 @@
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Page heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    color: #444;
+    font-size: 1rem;
+}
+
+/* Joke card */
+.joke-card {
+    background-color: #fff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin-bottom: 25px;
+}
+
+/* Joke text */
+.joke {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Joke setup and punchline, if available */
+.setup {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.delivery {
+    color: #666;
+    font-style: italic;
+}
+
+/* Button */
+button {
+    background-color: #5b5bd6;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #4444b8;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #222;
+    outline-offset: 3px;
+}
+
+/* Footer */
+footer {
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: #444;
+}
